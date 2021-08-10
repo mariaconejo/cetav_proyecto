@@ -1,0 +1,18 @@
+uuid: 58931e60-8dc8-4386-b8b6-79e85c99a70f
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Noticia
+type: noticia_
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

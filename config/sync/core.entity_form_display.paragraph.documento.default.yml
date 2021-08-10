@@ -1,0 +1,24 @@
+uuid: 434fd4c1-621f-4ebd-923d-a84597084e9a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.documento.field_documentos
+    - paragraphs.paragraphs_type.documento
+  module:
+    - media_library
+id: paragraph.documento.default
+targetEntityType: paragraph
+bundle: documento
+mode: default
+content:
+  field_documentos:
+    type: media_library_widget
+    weight: 1
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

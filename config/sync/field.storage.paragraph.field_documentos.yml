@@ -1,0 +1,20 @@
+uuid: 47406279-be6c-4fc6-b87e-2a9813e3e860
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - paragraphs
+id: paragraph.field_documentos
+field_name: field_documentos
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

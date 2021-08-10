@@ -1,0 +1,21 @@
+uuid: 4992b7c0-656b-4cdd-8681-a63742c5f27c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cita
+    - paragraphs.paragraphs_type.texto
+  module:
+    - options
+id: paragraph.texto.field_cita
+field_name: field_cita
+entity_type: paragraph
+bundle: texto
+label: Cita
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

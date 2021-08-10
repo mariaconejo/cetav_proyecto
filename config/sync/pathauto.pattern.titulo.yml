@@ -1,0 +1,22 @@
+uuid: 8402500b-2215-467a-9301-bb56938a2d9a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: titulo
+label: Titulo
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  f4f58cbb-7030-4196-b66e-0fa5fb37053e:
+    id: node_type
+    bundles:
+      landing_page: landing_page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: f4f58cbb-7030-4196-b66e-0fa5fb37053e
+selection_logic: and
+weight: -5
+relationships: {  }

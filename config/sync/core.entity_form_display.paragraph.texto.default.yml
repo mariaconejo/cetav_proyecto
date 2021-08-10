@@ -1,0 +1,30 @@
+uuid: 2bf1d778-3afa-4fd2-b56b-f1c0d92b3ea7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.texto.field_cita
+    - field.field.paragraph.texto.field_texto
+    - paragraphs.paragraphs_type.texto
+id: paragraph.texto.default
+targetEntityType: paragraph
+bundle: texto
+mode: default
+content:
+  field_cita:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_texto:
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+hidden:
+  created: true
+  status: true
