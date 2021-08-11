@@ -4,12 +4,10 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.page.body
-    - field.field.node.page.field_meta_tags
-    - field.field.node.page.field_yoast_seo
+    - field.field.node.page.field_descripcion
+    - field.field.node.page.field_logo
     - node.type.page
   module:
-    - text
     - user
 _core:
   default_config_hash: cSv5lDnbIgDug475Hdz3woED2XMqYv3awI-J9u1JLbY
@@ -18,17 +16,9 @@ targetEntityType: node
 bundle: page
 mode: teaser
 content:
-  body:
-    label: hidden
-    type: text_summary_or_trimmed
-    weight: 100
-    region: content
-    settings:
-      trim_length: 600
-    third_party_settings: {  }
   links:
     weight: 101
     region: content
 hidden:
-  field_meta_tags: true
-  field_yoast_seo: true
+  field_descripcion: true
+  field_logo: true

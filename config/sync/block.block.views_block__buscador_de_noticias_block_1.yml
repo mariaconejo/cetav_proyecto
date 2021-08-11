@@ -1,0 +1,30 @@
+uuid: e9621220-fa9d-4e60-b643-b186b9d62cd5
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.buscador_de_noticias
+  module:
+    - system
+    - views
+  theme:
+    - bartik
+id: views_block__buscador_de_noticias_block_1
+theme: bartik
+region: content
+weight: -4
+provider: null
+plugin: 'views_block:buscador_de_noticias-block_1'
+settings:
+  id: 'views_block:buscador_de_noticias-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /juegos-olimpicos
+    negate: false
+    context_mapping: {  }

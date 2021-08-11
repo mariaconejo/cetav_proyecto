@@ -1,11 +1,10 @@
-uuid: 0d2a105c-9af5-4a93-a61d-599d343e7e0f
+uuid: 79c5ac0e-8fc7-487e-b3d7-02b22796e0f1
 langcode: en
 status: true
 dependencies:
-  config:
-    - node.type.noticia_
   module:
     - node
+    - search
     - user
 id: buscador_de_noticias
 label: 'buscador de noticias'
@@ -54,7 +53,9 @@ display:
       style:
         type: default
       row:
-        type: fields
+        type: search_view
+        options:
+          score: true
       fields:
         title:
           id: title
@@ -120,32 +121,6 @@ display:
           separator: ', '
           field_api_classes: false
       filters:
-        status:
-          value: '1'
-          table: node_field_data
-          field: status
-          plugin_id: boolean
-          entity_type: node
-          entity_field: status
-          id: status
-          expose:
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-          group: 1
-        type:
-          id: type
-          table: node_field_data
-          field: type
-          value:
-            noticia_: noticia_
-          entity_type: node
-          entity_field: type
-          plugin_id: bundle
-          expose:
-            operator_limit_selection: false
-            operator_list: {  }
-          group: 1
         title:
           id: title
           table: node_field_revision
@@ -205,10 +180,23 @@ display:
           expose:
             label: ''
           granularity: second
-      title: buscador
+      title: 'buscador de noticias'
       header: {  }
       footer: {  }
-      empty: {  }
+      empty:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content:
+            value: 'No se encuentran resultados'
+            format: basic_html
+          plugin_id: text
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
