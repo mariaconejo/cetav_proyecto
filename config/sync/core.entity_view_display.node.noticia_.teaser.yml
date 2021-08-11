@@ -13,7 +13,6 @@ dependencies:
     - field.field.node.noticia_.field_titulo_teaser
     - node.type.noticia_
   module:
-    - image
     - layout_builder
     - text
     - user
@@ -26,15 +25,6 @@ targetEntityType: node
 bundle: noticia_
 mode: teaser
 content:
-  field_imagen:
-    type: image
-    weight: 1
-    region: content
-    label: above
-    settings:
-      image_style: ''
-      image_link: ''
-    third_party_settings: {  }
   field_resumen:
     type: text_default
     weight: 2
@@ -55,4 +45,5 @@ hidden:
   field_contenido: true
   field_destacada: true
   field_fecha: true
+  field_imagen: true
   links: true

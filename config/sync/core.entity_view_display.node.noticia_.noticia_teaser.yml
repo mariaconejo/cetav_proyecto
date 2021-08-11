@@ -38,7 +38,7 @@ content:
     third_party_settings: {  }
   field_imagen:
     type: image
-    weight: 1
+    weight: 2
     region: content
     label: above
     settings:
@@ -47,7 +47,7 @@ content:
     third_party_settings: {  }
   field_resumen:
     type: text_default
-    weight: 2
+    weight: 1
     region: content
     label: above
     settings: {  }
