@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.page.field_descripcion
     - field.field.node.page.field_logo
+    - field.field.node.page.layout_builder__layout
     - image.style.thumbnail
     - node.type.page
   module:
@@ -85,4 +86,5 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  layout_builder__layout: true

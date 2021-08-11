@@ -239,6 +239,7 @@ display:
       filter_groups:
         operator: AND
         groups: {  }
+      exposed_block: true
     cache_metadata:
       max-age: -1
       contexts:
