@@ -1,0 +1,38 @@
+uuid: 1f9e7bd5-f82c-45c1-99a8-2d85d9b21ba2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_image_1
+    - media.type.icono_
+  module:
+    - image
+id: media.icono_.field_media_image_1
+field_name: field_media_image_1
+entity_type: media
+bundle: icono_
+label: Image
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png svg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

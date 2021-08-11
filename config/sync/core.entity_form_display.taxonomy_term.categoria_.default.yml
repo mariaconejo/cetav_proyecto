@@ -34,7 +34,7 @@ content:
     type: string_textarea
     region: content
   field_destacada:
-    weight: 104
+    weight: 106
     settings: {  }
     third_party_settings: {  }
     type: options_select

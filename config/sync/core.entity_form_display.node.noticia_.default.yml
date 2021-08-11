@@ -6,30 +6,23 @@ dependencies:
     - field.field.node.noticia_.field_cate
     - field.field.node.noticia_.field_contenido
     - field.field.node.noticia_.field_destacada
+    - field.field.node.noticia_.field_fecha
     - field.field.node.noticia_.field_imagen
     - field.field.node.noticia_.field_resumen
-    - field.field.node.noticia_.field_titulo
     - field.field.node.noticia_.field_titulo_teaser
     - image.style.thumbnail
     - node.type.noticia_
   module:
+    - datetime
     - image
     - paragraphs
-    - path
-    - text
 id: node.noticia_.default
 targetEntityType: node
 bundle: noticia_
 mode: default
 content:
-  created:
-    type: datetime_timestamp
-    weight: 9
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   field_cate:
-    weight: 2
+    weight: 3
     settings: {  }
     third_party_settings: {  }
     type: options_select
@@ -47,86 +40,39 @@ content:
     third_party_settings: {  }
     region: content
   field_destacada:
-    weight: 3
+    weight: 27
     settings: {  }
     third_party_settings: {  }
-    type: options_buttons
+    type: options_select
+    region: content
+  field_fecha:
+    weight: 26
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
     region: content
   field_imagen:
-    weight: 6
+    type: image_image
+    weight: 2
+    region: content
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-    type: image_image
-    region: content
-  field_resumen:
-    weight: 7
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-    type: text_textarea
-    region: content
-  field_titulo:
-    weight: 0
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
-  field_titulo_teaser:
-    weight: 5
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
-  path:
-    type: path
-    weight: 12
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  promote:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 10
-    region: content
-    third_party_settings: {  }
-  status:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 13
-    region: content
-    third_party_settings: {  }
-  sticky:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 11
-    region: content
-    third_party_settings: {  }
   title:
     type: string_textfield
-    weight: 4
+    weight: 0
     region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  uid:
-    type: entity_reference_autocomplete
-    weight: 8
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-      match_limit: 10
-    region: content
-    third_party_settings: {  }
-hidden: {  }
+hidden:
+  created: true
+  field_resumen: true
+  field_titulo_teaser: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true
