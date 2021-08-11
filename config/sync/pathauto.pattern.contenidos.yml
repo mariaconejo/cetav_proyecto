@@ -1,0 +1,23 @@
+uuid: bddaed2a-a7c3-4cb9-b65f-475456332d91
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+id: contenidos
+label: Contenido
+type: 'canonical_entities:taxonomy_term'
+pattern: '[term:field_nombre]'
+selection_criteria:
+  7f97cdeb-83eb-40e8-992b-11e771f40ce9:
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      tag: tag
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    uuid: 7f97cdeb-83eb-40e8-992b-11e771f40ce9
+selection_logic: and
+weight: -5
+relationships: {  }

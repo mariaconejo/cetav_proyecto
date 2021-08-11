@@ -1,0 +1,27 @@
+uuid: be170281-5305-432a-8886-9f84d23e7c2f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph._enlaces.field__enlaces
+    - paragraphs.paragraphs_type._enlaces
+  module:
+    - link
+id: paragraph._enlaces.default
+targetEntityType: paragraph
+bundle: _enlaces
+mode: default
+content:
+  field__enlaces:
+    weight: 0
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden: {  }

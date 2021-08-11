@@ -1,0 +1,43 @@
+uuid: 64b50f94-032e-44a5-84a3-bbad0df2408b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_imagen_slider
+    - node.type.noticia_
+    - paragraphs.paragraphs_type._image_slider
+  module:
+    - entity_reference_revisions
+id: node.noticia_.field_imagen_slider
+field_name: field_imagen_slider
+entity_type: node
+bundle: noticia_
+label: 'Imagen Slider'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      _image_slider: _image_slider
+    target_bundles_drag_drop:
+      _enlaces:
+        weight: 9
+        enabled: false
+      _image_slider:
+        enabled: true
+        weight: 10
+      documento:
+        weight: 6
+        enabled: false
+      texto:
+        weight: 7
+        enabled: false
+      video_embed:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions

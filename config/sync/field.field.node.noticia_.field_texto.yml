@@ -1,0 +1,43 @@
+uuid: 88a4e0cf-3240-40b3-b138-2c97253161a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_texto
+    - node.type.noticia_
+    - paragraphs.paragraphs_type.texto
+  module:
+    - entity_reference_revisions
+id: node.noticia_.field_texto
+field_name: field_texto
+entity_type: node
+bundle: noticia_
+label: Texto
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      texto: texto
+    target_bundles_drag_drop:
+      _enlaces:
+        weight: 9
+        enabled: false
+      _image_slider:
+        weight: 10
+        enabled: false
+      documento:
+        weight: 6
+        enabled: false
+      texto:
+        enabled: true
+        weight: 7
+      video_embed:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions

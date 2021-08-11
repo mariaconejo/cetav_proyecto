@@ -1,0 +1,21 @@
+uuid: 0fc83332-62da-44ce-94c3-dd9dab343307
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_destacada
+    - taxonomy.vocabulary.categoria_
+  module:
+    - options
+id: taxonomy_term.categoria_.field_destacada
+field_name: field_destacada
+entity_type: taxonomy_term
+bundle: categoria_
+label: Destacada
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
