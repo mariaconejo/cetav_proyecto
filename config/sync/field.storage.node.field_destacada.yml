@@ -1,17 +1,23 @@
-uuid: a203078e-d91a-4fd0-89aa-16c676edbb92
+uuid: d4647735-a090-4faa-90ce-e9f52c8cb0b7
 langcode: en
 status: true
 dependencies:
   module:
     - node
+    - options
 id: node.field_destacada
 field_name: field_destacada
 entity_type: node
-type: boolean
-settings: {  }
-module: core
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'yes'
+      label: 'yes'
+  allowed_values_function: ''
+module: options
 locked: false
-cardinality: 1
+cardinality: -1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

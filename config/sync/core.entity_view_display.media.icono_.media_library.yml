@@ -1,0 +1,30 @@
+uuid: 9b4d7af0-e135-4eef-a47b-5a3de49737df
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.media_library
+    - field.field.media.icono_.field_media_image_1
+    - image.style.medium
+    - media.type.icono_
+  module:
+    - image
+id: media.icono_.media_library
+targetEntityType: media
+bundle: icono_
+mode: media_library
+content:
+  thumbnail:
+    type: image
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: ''
+    weight: 0
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  field_media_image_1: true
+  name: true
+  uid: true

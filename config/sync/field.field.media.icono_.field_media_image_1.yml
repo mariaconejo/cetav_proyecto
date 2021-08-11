@@ -1,27 +1,27 @@
-uuid: 7bcce119-cf4a-4a67-b7aa-ac7f99bc95eb
+uuid: 1f9e7bd5-f82c-45c1-99a8-2d85d9b21ba2
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_imagen
-    - node.type.noticia_
+    - field.storage.media.field_media_image_1
+    - media.type.icono_
   module:
     - image
-id: node.noticia_.field_imagen
-field_name: field_imagen
-entity_type: node
-bundle: noticia_
-label: Imagen
+id: media.icono_.field_media_image_1
+field_name: field_media_image_1
+entity_type: media
+bundle: icono_
+label: Image
 description: ''
-required: false
-translatable: false
+required: true
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
   file_directory: '[date:custom:Y]-[date:custom:m]'
-  file_extensions: 'png gif jpg jpeg'
+  file_extensions: 'png svg'
   max_filesize: ''
-  max_resolution: 200x200
+  max_resolution: ''
   min_resolution: ''
   alt_field: true
   alt_field_required: true

@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - field.storage.taxonomy_term.field_iconos
-    - media.type.image
+    - media.type.icono_
     - taxonomy.vocabulary.categoria_
 id: taxonomy_term.categoria_.field_iconos
 field_name: field_iconos
@@ -20,9 +20,9 @@ settings:
   handler: 'default:media'
   handler_settings:
     target_bundles:
-      image: image
+      icono_: icono_
     sort:
       field: _none
     auto_create: false
-    auto_create_bundle: ''
+    auto_create_bundle: icono_
 field_type: entity_reference

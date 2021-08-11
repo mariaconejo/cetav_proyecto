@@ -1,4 +1,4 @@
-uuid: 7c410f4f-1aee-4a8e-aaba-998ebde775ea
+uuid: 8f009ac3-406d-485b-8741-9ecd9db29a02
 langcode: en
 status: true
 dependencies:
@@ -10,7 +10,10 @@ field_name: field_destacada
 entity_type: taxonomy_term
 type: list_string
 settings:
-  allowed_values: {  }
+  allowed_values:
+    -
+      value: 'yes'
+      label: 'yes'
   allowed_values_function: ''
 module: options
 locked: false

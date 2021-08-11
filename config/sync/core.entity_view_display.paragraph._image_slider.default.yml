@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph._image_slider.field_imagen
+    - image.style.large
     - paragraphs.paragraphs_type._image_slider
   module:
     - image
@@ -16,7 +17,7 @@ content:
     weight: 0
     label: above
     settings:
-      image_style: ''
+      image_style: large
       image_link: ''
     third_party_settings: {  }
     type: image

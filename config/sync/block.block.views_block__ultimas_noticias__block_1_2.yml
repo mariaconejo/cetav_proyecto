@@ -1,0 +1,30 @@
+uuid: 32176e48-964a-4d3f-8d7c-908f5b9afef5
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.ultimas_noticias_
+  module:
+    - system
+    - views
+  theme:
+    - bartik
+id: views_block__ultimas_noticias__block_1_2
+theme: bartik
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:ultimas_noticias_-block_1'
+settings:
+  id: 'views_block:ultimas_noticias_-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /homepage
+    negate: false
+    context_mapping: {  }

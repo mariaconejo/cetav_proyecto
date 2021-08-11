@@ -31,7 +31,7 @@ content:
     type: basic_string
     region: content
   field_destacada:
-    weight: 4
+    weight: 6
     label: above
     settings: {  }
     third_party_settings: {  }
