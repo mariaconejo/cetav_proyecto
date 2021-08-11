@@ -1,4 +1,4 @@
-uuid: 3160140b-3519-4742-a2dd-0bd976093048
+uuid: 3a3c3163-e0aa-4e38-bfb0-b029b99e2394
 langcode: en
 status: true
 dependencies:
@@ -6,8 +6,8 @@ dependencies:
     - entity_reference_revisions
     - node
     - paragraphs
-id: node.field_video
-field_name: field_video
+id: node.field_contenido
+field_name: field_contenido
 entity_type: node
 type: entity_reference_revisions
 settings:

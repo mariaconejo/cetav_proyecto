@@ -1,12 +1,10 @@
-uuid: fbcd1ba4-18c4-4fde-89d7-7448ad05fedb
+uuid: 701c6471-b854-4403-a559-d0bd704a7513
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_destacada
     - node.type.noticia_
-  module:
-    - options
 id: node.noticia_.field_destacada
 field_name: field_destacada
 entity_type: node
@@ -15,7 +13,11 @@ label: Destacada
 description: ''
 required: false
 translatable: false
-default_value: {  }
+default_value:
+  -
+    value: 1
 default_value_callback: ''
-settings: {  }
-field_type: list_string
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

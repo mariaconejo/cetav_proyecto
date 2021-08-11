@@ -1,18 +1,22 @@
-uuid: 3e0279cd-2d4e-4a43-912b-39ee43f944ea
+uuid: db8b02ab-7229-4dff-916c-e5c0ea3658aa
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_links
+    - field.storage.node.field_contenido
     - node.type.noticia_
     - paragraphs.paragraphs_type._enlaces
+    - paragraphs.paragraphs_type._image_slider
+    - paragraphs.paragraphs_type.documento
+    - paragraphs.paragraphs_type.texto
+    - paragraphs.paragraphs_type.video_embed
   module:
     - entity_reference_revisions
-id: node.noticia_.field_links
-field_name: field_links
+id: node.noticia_.field_contenido
+field_name: field_contenido
 entity_type: node
 bundle: noticia_
-label: Links
+label: Contenido
 description: ''
 required: false
 translatable: false
@@ -23,21 +27,25 @@ settings:
   handler_settings:
     negate: 0
     target_bundles:
+      documento: documento
+      texto: texto
+      video_embed: video_embed
       _enlaces: _enlaces
+      _image_slider: _image_slider
     target_bundles_drag_drop:
       _enlaces:
         enabled: true
         weight: 9
       _image_slider:
+        enabled: true
         weight: 10
-        enabled: false
       documento:
+        enabled: true
         weight: 6
-        enabled: false
       texto:
+        enabled: true
         weight: 7
-        enabled: false
       video_embed:
+        enabled: true
         weight: 8
-        enabled: false
 field_type: entity_reference_revisions

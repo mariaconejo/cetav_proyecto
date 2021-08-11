@@ -1,36 +1,58 @@
 uuid: e5f21e53-0d13-4b60-8d4e-764b85cb6f13
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.noticia_.field_cate
+    - field.field.node.noticia_.field_contenido
     - field.field.node.noticia_.field_destacada
-    - field.field.node.noticia_.field_documentos
-    - field.field.node.noticia_.field_imagen_slider
-    - field.field.node.noticia_.field_links
-    - field.field.node.noticia_.field_tag
-    - field.field.node.noticia_.field_texto
-    - field.field.node.noticia_.field_video
+    - field.field.node.noticia_.field_imagen
+    - field.field.node.noticia_.field_resumen
+    - field.field.node.noticia_.field_titulo
+    - field.field.node.noticia_.field_titulo_teaser
     - node.type.noticia_
   module:
+    - image
+    - layout_builder
+    - text
     - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
 id: node.noticia_.teaser
 targetEntityType: node
 bundle: noticia_
 mode: teaser
 content:
-  links:
-    weight: 100
+  field_imagen:
+    type: image
+    weight: 1
+    region: content
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+  field_resumen:
+    type: text_default
+    weight: 2
+    region: content
+    label: above
     settings: {  }
     third_party_settings: {  }
+  field_titulo_teaser:
+    type: string
+    weight: 0
     region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
 hidden:
   field_cate: true
+  field_contenido: true
   field_destacada: true
-  field_documentos: true
-  field_imagen_slider: true
-  field_links: true
-  field_tag: true
-  field_texto: true
-  field_video: true
+  field_titulo: true
+  links: true

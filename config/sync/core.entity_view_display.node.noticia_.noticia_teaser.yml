@@ -1,8 +1,9 @@
-uuid: 26575cb9-9fd0-42ea-9431-e4465a4a26ff
+uuid: cec4545d-e87e-41ea-bdd3-c5fc2843f0fb
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.noticia_teaser
     - field.field.node.noticia_.field_cate
     - field.field.node.noticia_.field_contenido
     - field.field.node.noticia_.field_destacada
@@ -12,54 +13,46 @@ dependencies:
     - field.field.node.noticia_.field_titulo_teaser
     - node.type.noticia_
   module:
-    - entity_reference_revisions
+    - image
+    - layout_builder
+    - text
     - user
-id: node.noticia_.default
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: node.noticia_.noticia_teaser
 targetEntityType: node
 bundle: noticia_
-mode: default
+mode: noticia_teaser
 content:
-  field_cate:
+  field_imagen:
+    type: image
     weight: 1
+    region: content
     label: above
     settings:
-      link: true
+      image_style: ''
+      image_link: ''
     third_party_settings: {  }
-    type: entity_reference_label
-    region: content
-  field_contenido:
-    type: entity_reference_revisions_entity_view
+  field_resumen:
+    type: text_default
     weight: 2
-    label: above
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
     region: content
-  field_destacada:
-    weight: 4
     label: above
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
+    settings: {  }
     third_party_settings: {  }
-    type: boolean
-    region: content
-  field_titulo:
+  field_titulo_teaser:
+    type: string
     weight: 0
+    region: content
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
-    region: content
-  links:
-    weight: 3
-    region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
-  field_imagen: true
-  field_resumen: true
-  field_titulo_teaser: true
+  field_cate: true
+  field_contenido: true
+  field_destacada: true
+  field_titulo: true
+  links: true

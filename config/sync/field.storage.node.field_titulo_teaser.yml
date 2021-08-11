@@ -1,14 +1,17 @@
-uuid: a203078e-d91a-4fd0-89aa-16c676edbb92
+uuid: 81514a95-6caa-4d55-91b0-4dfd0098ee91
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: node.field_destacada
-field_name: field_destacada
+id: node.field_titulo_teaser
+field_name: field_titulo_teaser
 entity_type: node
-type: boolean
-settings: {  }
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
 module: core
 locked: false
 cardinality: 1
