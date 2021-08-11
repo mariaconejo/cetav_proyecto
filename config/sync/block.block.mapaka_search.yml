@@ -1,0 +1,23 @@
+uuid: 7e61e0d6-417d-4400-9715-a8607a28c41b
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - mapaka
+_core:
+  default_config_hash: Q-4EcGAsu26ICu4ejEz0uE1zv4akpiaOsizxgZfAmEw
+id: mapaka_search
+theme: mapaka
+region: sidebar_first
+weight: -1
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+  page_id: node_search
+visibility: {  }

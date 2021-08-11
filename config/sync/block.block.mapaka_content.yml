@@ -1,0 +1,22 @@
+uuid: 1087c29f-0c28-4b82-8491-876b132e3efb
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - mapaka
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: mapaka_content
+theme: mapaka
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

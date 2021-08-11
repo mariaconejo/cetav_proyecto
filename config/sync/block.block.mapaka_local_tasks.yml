@@ -1,0 +1,22 @@
+uuid: a7b838b0-195b-407a-8eaf-1a8dc31a0014
+langcode: en
+status: true
+dependencies:
+  theme:
+    - mapaka
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: mapaka_local_tasks
+theme: mapaka
+region: content
+weight: -40
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }
