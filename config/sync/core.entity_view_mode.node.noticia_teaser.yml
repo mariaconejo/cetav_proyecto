@@ -1,0 +1,10 @@
+uuid: ea98810e-39b2-4190-bb3d-7f0a592cc380
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.noticia_teaser
+label: 'Noticia Teaser'
+targetEntityType: node
+cache: true

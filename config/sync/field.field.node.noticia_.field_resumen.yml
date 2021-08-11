@@ -1,0 +1,21 @@
+uuid: 62a1f41c-92fe-4423-a7f9-cc70b7a9e799
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_resumen
+    - node.type.noticia_
+  module:
+    - text
+id: node.noticia_.field_resumen
+field_name: field_resumen
+entity_type: node
+bundle: noticia_
+label: Resumen
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
