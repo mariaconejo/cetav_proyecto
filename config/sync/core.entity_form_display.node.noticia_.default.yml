@@ -4,13 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.noticia_.field_cate
-    - field.field.node.noticia_.field_destacada
-    - field.field.node.noticia_.field_documentos
-    - field.field.node.noticia_.field_imagen_slider
-    - field.field.node.noticia_.field_links
-    - field.field.node.noticia_.field_tag
-    - field.field.node.noticia_.field_texto
-    - field.field.node.noticia_.field_video
+    - field.field.node.noticia_.field_contenido
     - node.type.noticia_
   module:
     - paragraphs
@@ -36,73 +30,9 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
-  field_destacada:
-    weight: 130
-    settings: {  }
-    third_party_settings: {  }
-    type: options_buttons
-    region: content
-  field_documentos:
+  field_contenido:
     type: entity_reference_paragraphs
-    weight: 124
-    settings:
-      title: Paragraph
-      title_plural: Paragraphs
-      edit_mode: open
-      add_mode: dropdown
-      form_display_mode: default
-      default_paragraph_type: ''
-    third_party_settings: {  }
-    region: content
-  field_imagen_slider:
-    type: entity_reference_paragraphs
-    weight: 125
-    settings:
-      title: Paragraph
-      title_plural: Paragraphs
-      edit_mode: open
-      add_mode: dropdown
-      form_display_mode: default
-      default_paragraph_type: ''
-    third_party_settings: {  }
-    region: content
-  field_links:
-    type: entity_reference_paragraphs
-    weight: 127
-    settings:
-      title: Paragraph
-      title_plural: Paragraphs
-      edit_mode: open
-      add_mode: dropdown
-      form_display_mode: default
-      default_paragraph_type: ''
-    third_party_settings: {  }
-    region: content
-  field_tag:
     weight: 129
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: entity_reference_autocomplete
-    region: content
-  field_texto:
-    type: entity_reference_paragraphs
-    weight: 122
-    settings:
-      title: Paragraph
-      title_plural: Paragraphs
-      edit_mode: open
-      add_mode: dropdown
-      form_display_mode: default
-      default_paragraph_type: ''
-    third_party_settings: {  }
-    region: content
-  field_video:
-    type: entity_reference_paragraphs
-    weight: 126
     settings:
       title: Paragraph
       title_plural: Paragraphs

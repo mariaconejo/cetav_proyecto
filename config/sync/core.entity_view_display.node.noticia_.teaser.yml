@@ -5,16 +5,15 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.noticia_.field_cate
-    - field.field.node.noticia_.field_destacada
-    - field.field.node.noticia_.field_documentos
-    - field.field.node.noticia_.field_imagen_slider
-    - field.field.node.noticia_.field_links
-    - field.field.node.noticia_.field_tag
-    - field.field.node.noticia_.field_texto
-    - field.field.node.noticia_.field_video
+    - field.field.node.noticia_.field_contenido
     - node.type.noticia_
   module:
+    - layout_builder
     - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
 id: node.noticia_.teaser
 targetEntityType: node
 bundle: noticia_
@@ -27,10 +26,4 @@ content:
     region: content
 hidden:
   field_cate: true
-  field_destacada: true
-  field_documentos: true
-  field_imagen_slider: true
-  field_links: true
-  field_tag: true
-  field_texto: true
-  field_video: true
+  field_contenido: true
