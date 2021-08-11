@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.noticia_.field_fecha
     - field.field.node.noticia_.field_imagen
     - field.field.node.noticia_.field_resumen
+    - field.field.node.noticia_.field_tabs
     - field.field.node.noticia_.field_titulo_teaser
     - image.style.thumbnail
     - node.type.noticia_
@@ -75,6 +76,12 @@ content:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
+  field_tabs:
+    weight: 27
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
   field_titulo_teaser:
     type: string_textfield
     weight: 5

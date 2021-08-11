@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.noticia_.field_fecha
     - field.field.node.noticia_.field_imagen
     - field.field.node.noticia_.field_resumen
+    - field.field.node.noticia_.field_tabs
     - field.field.node.noticia_.field_titulo_teaser
     - node.type.noticia_
   module:
@@ -46,4 +47,5 @@ hidden:
   field_destacada: true
   field_fecha: true
   field_imagen: true
+  field_tabs: true
   links: true
