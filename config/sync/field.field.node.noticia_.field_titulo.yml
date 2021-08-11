@@ -1,0 +1,19 @@
+uuid: f95dba1a-5185-45e2-b83c-4dddd3861bb0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_titulo
+    - node.type.noticia_
+id: node.noticia_.field_titulo
+field_name: field_titulo
+entity_type: node
+bundle: noticia_
+label: Titulo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
