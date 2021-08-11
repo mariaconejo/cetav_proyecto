@@ -1,22 +1,22 @@
-uuid: e9621220-fa9d-4e60-b643-b186b9d62cd5
+uuid: e702ad58-a611-4626-a97b-b1c67df2f8b0
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.buscador_de_noticias
+    - views.view.listar_noticias
   module:
     - system
     - views
   theme:
     - bartik
-id: views_block__buscador_de_noticias_block_1
+id: views_block__listar_noticias_block_1
 theme: bartik
 region: content
-weight: -5
+weight: -2
 provider: null
-plugin: 'views_block:buscador_de_noticias-block_1'
+plugin: 'views_block:listar_noticias-block_1'
 settings:
-  id: 'views_block:buscador_de_noticias-block_1'
+  id: 'views_block:listar_noticias-block_1'
   label: ''
   provider: views
   label_display: visible
