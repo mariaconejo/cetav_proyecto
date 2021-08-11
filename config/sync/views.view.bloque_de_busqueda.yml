@@ -1,14 +1,12 @@
-uuid: 4dc0f60f-d76a-423d-bebe-55356b2200f1
+uuid: e2600cbd-48ce-49ec-8361-ee79302c4372
 langcode: en
 status: true
 dependencies:
-  config:
-    - core.entity_view_mode.node.teaser
   module:
     - node
     - user
-id: busqueda_de_noticias
-label: 'Búsqueda de noticias'
+id: bloque_de_busqueda
+label: 'bloque de busqueda'
 module: views
 description: ''
 tag: ''
@@ -47,29 +45,18 @@ display:
           sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
-        type: mini
+        type: some
         options:
-          items_per_page: 10
+          items_per_page: 5
           offset: 0
-          id: 0
-          total_pages: null
-          expose:
-            items_per_page: false
-            items_per_page_label: 'Items per page'
-            items_per_page_options: '5, 10, 25, 50'
-            items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
-            offset: false
-            offset_label: Offset
-          tags:
-            previous: ‹‹
-            next: ››
       style:
         type: default
-      row:
-        type: 'entity:node'
         options:
-          view_mode: teaser
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+      row:
+        type: fields
       fields:
         title:
           id: title
@@ -77,7 +64,6 @@ display:
           field: title
           entity_type: node
           entity_field: title
-          label: ''
           alter:
             alter_text: false
             make_link: false
@@ -95,6 +81,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          label: Title
           exclude: false
           element_type: ''
           element_class: ''
@@ -119,19 +106,49 @@ display:
           separator: ', '
           field_api_classes: false
       filters:
-        status:
-          value: '1'
-          table: node_field_data
-          field: status
-          plugin_id: boolean
-          entity_type: node
-          entity_field: status
-          id: status
+        title:
+          id: title
+          table: node_field_revision
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: word
+          value: ''
+          group: 1
+          exposed: true
           expose:
-            operator: ''
+            operator_id: title_op
+            label: Title
+            description: ''
+            use_operator: false
+            operator: title_op
             operator_limit_selection: false
             operator_list: {  }
-          group: 1
+            identifier: title
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: title
+          plugin_id: string
       sorts:
         created:
           id: created
@@ -148,35 +165,55 @@ display:
           expose:
             label: ''
           granularity: second
-      title: 'Búsqueda de noticias'
+      title: 'bloque de busqueda'
       header: {  }
       footer: {  }
-      empty: {  }
+      empty:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content:
+            value: 'No se encontraron resultados'
+            format: basic_html
+          plugin_id: text
       relationships: {  }
       arguments: {  }
+      display_extenders: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - url.query_args
+        - url
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
-  page_1:
-    display_plugin: page
-    id: page_1
-    display_title: Page
+  block_1:
+    display_plugin: block
+    id: block_1
+    display_title: Block
     position: 1
     display_options:
       display_extenders: {  }
-      path: b-squeda-de-noticias
+      block_description: 'Busqueda de noticias'
+      allow:
+        items_per_page: true
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - url.query_args
+        - url
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
