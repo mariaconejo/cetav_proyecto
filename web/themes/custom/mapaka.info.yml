@@ -1,0 +1,13 @@
+name: Mapaka Tema
+type: theme
+description: 'Tema de Mapaka'
+core_version_requirement: ^8 || ^9
+libraries:
+  - mapaka/practica_css
+  - mapaka/practica_js
+region:
+  header: Header
+  content: Content
+  sidebar_r: 'Sidebar Right'
+  footer: Footer
+
