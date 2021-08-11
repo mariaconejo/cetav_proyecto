@@ -1,22 +1,22 @@
-uuid: 32176e48-964a-4d3f-8d7c-908f5b9afef5
+uuid: c517b70e-bd3f-4c4d-bf5b-abecb97e3c5a
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.ultimas_noticias_
+    - views.view.banner_de_noticias_destacadas
   module:
     - system
     - views
   theme:
     - bartik
-id: views_block__ultimas_noticias__block_1_2
+id: views_block__banner_de_noticias_destacadas_block_1
 theme: bartik
 region: content
-weight: 0
+weight: -6
 provider: null
-plugin: 'views_block:ultimas_noticias_-block_1'
+plugin: 'views_block:banner_de_noticias_destacadas-block_1'
 settings:
-  id: 'views_block:ultimas_noticias_-block_1'
+  id: 'views_block:banner_de_noticias_destacadas-block_1'
   label: ''
   provider: views
   label_display: visible

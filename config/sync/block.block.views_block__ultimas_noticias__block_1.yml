@@ -1,40 +1,30 @@
-uuid: b148a590-541a-49fc-8f88-13eeb14c7531
+uuid: 1c229c47-fbcc-47b2-9ce6-b0f574197bb0
 langcode: en
 status: true
 dependencies:
   config:
     - views.view.ultimas_noticias_
   module:
-    - ctools
-    - node
+    - system
     - views
   theme:
     - bartik
 id: views_block__ultimas_noticias__block_1
 theme: bartik
 region: content
-weight: 0
+weight: -5
 provider: null
 plugin: 'views_block:ultimas_noticias_-block_1'
 settings:
   id: 'views_block:ultimas_noticias_-block_1'
   label: ''
   provider: views
-  label_display: '0'
+  label_display: visible
   views_label: ''
   items_per_page: none
 visibility:
-  node_type:
-    id: node_type
-    bundles:
-      landing_page: landing_page
+  request_path:
+    id: request_path
+    pages: /homepage
     negate: false
-    context_mapping:
-      node: '@node.node_route_context:node'
-  'entity_bundle:node':
-    id: 'entity_bundle:node'
-    bundles:
-      landing_page: landing_page
-    negate: false
-    context_mapping:
-      node: '@node.node_route_context:node'
+    context_mapping: {  }

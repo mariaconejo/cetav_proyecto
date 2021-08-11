@@ -1,17 +1,17 @@
-uuid: 7bcce119-cf4a-4a67-b7aa-ac7f99bc95eb
+uuid: 03690628-5d03-463f-bec7-c9a9cbb10875
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_imagen
+    - field.storage.node.field_imagen_
     - node.type.noticia_
   module:
     - image
-id: node.noticia_.field_imagen
-field_name: field_imagen
+id: node.noticia_.field_imagen_
+field_name: field_imagen_
 entity_type: node
 bundle: noticia_
-label: Imagen
+label: 'Imagen Teaser'
 description: ''
 required: false
 translatable: false

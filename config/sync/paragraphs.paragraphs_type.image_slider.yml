@@ -1,9 +1,9 @@
-uuid: 58f910ea-b6ef-421c-af46-d4558a657c74
+uuid: 63bd4285-d35e-46b6-b1be-fcd60e4c162e
 langcode: en
 status: true
 dependencies: {  }
-id: _image_slider
-label: ' Image Slider'
+id: image_slider
+label: Image_slider
 icon_uuid: null
 icon_default: null
 description: ''

@@ -1,0 +1,28 @@
+uuid: 69842313-c73f-47ef-ae37-102836202837
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image_teaser
+    - media.type.image
+    - node.type.noticia_
+id: node.noticia_.field_image_teaser
+field_name: field_image_teaser
+entity_type: node
+bundle: noticia_
+label: Image
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

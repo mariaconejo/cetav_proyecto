@@ -8,7 +8,8 @@ dependencies:
     - field.field.node.noticia_.field_contenido
     - field.field.node.noticia_.field_destacada
     - field.field.node.noticia_.field_fecha
-    - field.field.node.noticia_.field_imagen
+    - field.field.node.noticia_.field_image_teaser
+    - field.field.node.noticia_.field_imagen_
     - field.field.node.noticia_.field_resumen
     - field.field.node.noticia_.field_titulo_teaser
     - node.type.noticia_
@@ -36,9 +37,9 @@ content:
       format_type: medium
       timezone_override: ''
     third_party_settings: {  }
-  field_imagen:
+  field_imagen_:
     type: image
-    weight: 2
+    weight: 1
     region: content
     label: above
     settings:
@@ -47,7 +48,7 @@ content:
     third_party_settings: {  }
   field_resumen:
     type: text_default
-    weight: 1
+    weight: 2
     region: content
     label: above
     settings: {  }
@@ -64,4 +65,5 @@ hidden:
   field_cate: true
   field_contenido: true
   field_destacada: true
+  field_image_teaser: true
   links: true

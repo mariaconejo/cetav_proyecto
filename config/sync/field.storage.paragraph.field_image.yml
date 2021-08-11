@@ -1,4 +1,4 @@
-uuid: eb3e114b-aa10-4b79-916c-b4d10cd21233
+uuid: db377833-a820-444b-b618-34d2aa45ef44
 langcode: en
 status: true
 dependencies:
@@ -6,8 +6,8 @@ dependencies:
     - file
     - image
     - paragraphs
-id: paragraph.field_imagen
-field_name: field_imagen
+id: paragraph.field_image
+field_name: field_image
 entity_type: paragraph
 type: image
 settings:
@@ -23,7 +23,7 @@ settings:
   display_default: false
 module: image
 locked: false
-cardinality: 1
+cardinality: -1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

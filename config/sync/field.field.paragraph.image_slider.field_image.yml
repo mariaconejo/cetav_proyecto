@@ -1,17 +1,17 @@
-uuid: 0f98ef7a-e654-49a1-9f90-1c347e0fbee9
+uuid: 680e6e3e-2236-4224-9824-ea2390e37881
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_imagen
-    - paragraphs.paragraphs_type._image_slider
+    - field.storage.paragraph.field_image
+    - paragraphs.paragraphs_type.image_slider
   module:
     - image
-id: paragraph._image_slider.field_imagen
-field_name: field_imagen
+id: paragraph.image_slider.field_image
+field_name: field_image
 entity_type: paragraph
-bundle: _image_slider
-label: Imagen
+bundle: image_slider
+label: Image
 description: ''
 required: false
 translatable: false

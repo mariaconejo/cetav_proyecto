@@ -6,8 +6,8 @@ dependencies:
     - field.storage.node.field_contenido
     - node.type.noticia_
     - paragraphs.paragraphs_type._enlaces
-    - paragraphs.paragraphs_type._image_slider
     - paragraphs.paragraphs_type.documento
+    - paragraphs.paragraphs_type.image_slider
     - paragraphs.paragraphs_type.texto
     - paragraphs.paragraphs_type.video_embed
   module:
@@ -28,20 +28,20 @@ settings:
     negate: 0
     target_bundles:
       documento: documento
+      image_slider: image_slider
       texto: texto
       video_embed: video_embed
       _enlaces: _enlaces
-      _image_slider: _image_slider
     target_bundles_drag_drop:
       _enlaces:
         enabled: true
         weight: 9
-      _image_slider:
-        enabled: true
-        weight: 10
       documento:
         enabled: true
         weight: 6
+      image_slider:
+        enabled: true
+        weight: 7
       texto:
         enabled: true
         weight: 7

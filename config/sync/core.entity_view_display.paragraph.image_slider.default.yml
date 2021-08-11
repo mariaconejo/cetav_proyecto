@@ -1,23 +1,22 @@
-uuid: 678e47cc-1870-4540-a953-3856a23bfa12
+uuid: a83b371d-3197-4323-9bce-c432e21511b3
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph._image_slider.field_imagen
-    - image.style.large
-    - paragraphs.paragraphs_type._image_slider
+    - field.field.paragraph.image_slider.field_image
+    - paragraphs.paragraphs_type.image_slider
   module:
     - image
-id: paragraph._image_slider.default
+id: paragraph.image_slider.default
 targetEntityType: paragraph
-bundle: _image_slider
+bundle: image_slider
 mode: default
 content:
-  field_imagen:
+  field_image:
     weight: 0
     label: above
     settings:
-      image_style: large
+      image_style: ''
       image_link: ''
     third_party_settings: {  }
     type: image

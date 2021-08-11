@@ -1,0 +1,10 @@
+uuid: f17f4662-8b01-427e-9c04-900c640ecb75
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.banner_noticia
+label: 'Banner noticia'
+targetEntityType: node
+cache: true
