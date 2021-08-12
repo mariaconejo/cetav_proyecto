@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.taxonomy_term.tags.field_nombres
+    - field.field.taxonomy_term.tags.layout_builder__layout
     - taxonomy.vocabulary.tags
   module:
     - path
@@ -50,4 +51,5 @@ content:
     weight: 100
     region: content
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  layout_builder__layout: true
