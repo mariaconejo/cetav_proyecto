@@ -1,22 +1,22 @@
-uuid: 1c229c47-fbcc-47b2-9ce6-b0f574197bb0
+uuid: 43ec17ae-0b61-4a90-92d0-bd9ead6e132d
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.ultimas_noticias_
+    - views.view.noticias_olimpicas
   module:
     - system
     - views
   theme:
     - bartik
-id: views_block__ultimas_noticias__block_1
+id: views_block__noticias_olimpicas_block_1
 theme: bartik
 region: content
-weight: -3
+weight: -1
 provider: null
-plugin: 'views_block:ultimas_noticias_-block_1'
+plugin: 'views_block:noticias_olimpicas-block_1'
 settings:
-  id: 'views_block:ultimas_noticias_-block_1'
+  id: 'views_block:noticias_olimpicas-block_1'
   label: ''
   provider: views
   label_display: visible
@@ -25,6 +25,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /homepage
+    pages: /juegos-olimpicos
     negate: false
     context_mapping: {  }
