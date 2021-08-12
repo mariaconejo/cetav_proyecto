@@ -6,7 +6,59 @@ dependencies:
     - field.field.taxonomy_term.categoria_.field_descripcio
     - field.field.taxonomy_term.categoria_.field_destacada
     - field.field.taxonomy_term.categoria_.field_iconos
+    - field.field.taxonomy_term.categoria_.layout_builder__layout
     - taxonomy.vocabulary.categoria_
+    - views.view.busqueda_noticias
+  module:
+    - layout_builder
+    - layout_discovery
+    - views
+third_party_settings:
+  layout_builder:
+    allow_custom: true
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          cbc99dd7-a8b4-4e78-82bc-a5d99447d255:
+            uuid: cbc99dd7-a8b4-4e78-82bc-a5d99447d255
+            region: content
+            configuration:
+              id: 'views_exposed_filter_block:busqueda_noticias-page_1'
+              label: ''
+              provider: views
+              label_display: visible
+              views_label: ''
+              context_mapping: {  }
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          d399af12-f5f9-4660-a228-dbe4921e6f2c:
+            uuid: d399af12-f5f9-4660-a228-dbe4921e6f2c
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:taxonomy_term:categoria_:field_iconos'
+              formatter:
+                type: entity_reference_entity_view
+                label: above
+                settings:
+                  view_mode: default
+                  link: false
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
 id: taxonomy_term.categoria_.default
 targetEntityType: taxonomy_term
 bundle: categoria_
@@ -25,3 +77,4 @@ hidden:
   description: true
   field_descripcio: true
   field_destacada: true
+  layout_builder__layout: true

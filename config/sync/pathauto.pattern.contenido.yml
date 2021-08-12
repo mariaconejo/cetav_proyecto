@@ -8,16 +8,16 @@ dependencies:
 id: contenido
 label: Contenido
 type: 'canonical_entities:taxonomy_term'
-pattern: '[term:field_nombre]'
+pattern: '[term:name]'
 selection_criteria:
-  41d9c32b-e70d-416b-bddc-2527dbebfefe:
+  95cf04a1-8133-421c-9711-c48cefc8dc41:
     id: 'entity_bundle:taxonomy_term'
     bundles:
-      categoria_: categoria_
+      tags: tags
     negate: false
     context_mapping:
       taxonomy_term: taxonomy_term
-    uuid: 41d9c32b-e70d-416b-bddc-2527dbebfefe
+    uuid: 95cf04a1-8133-421c-9711-c48cefc8dc41
 selection_logic: and
 weight: -5
 relationships: {  }

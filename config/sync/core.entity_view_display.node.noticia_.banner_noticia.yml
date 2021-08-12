@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.noticia_.field_image_teaser
     - field.field.node.noticia_.field_imagen_
     - field.field.node.noticia_.field_resumen
+    - field.field.node.noticia_.field_tag
     - field.field.node.noticia_.field_titulo_teaser
     - node.type.noticia_
   module:
@@ -26,6 +27,11 @@ targetEntityType: node
 bundle: noticia_
 mode: banner_noticia
 content:
+  content_moderation_control:
+    weight: -20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   field_cate:
     weight: 3
     label: above
@@ -63,4 +69,5 @@ hidden:
   field_destacada: true
   field_fecha: true
   field_imagen_: true
+  field_tag: true
   links: true

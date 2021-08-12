@@ -6,6 +6,7 @@ dependencies:
     - field.field.taxonomy_term.categoria_.field_descripcio
     - field.field.taxonomy_term.categoria_.field_destacada
     - field.field.taxonomy_term.categoria_.field_iconos
+    - field.field.taxonomy_term.categoria_.layout_builder__layout
     - taxonomy.vocabulary.categoria_
   module:
     - media_library
@@ -59,3 +60,4 @@ content:
     third_party_settings: {  }
 hidden:
   description: true
+  layout_builder__layout: true
