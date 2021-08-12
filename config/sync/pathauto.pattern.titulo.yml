@@ -9,14 +9,14 @@ label: Titulo
 type: 'canonical_entities:node'
 pattern: '[node:title]'
 selection_criteria:
-  f4f58cbb-7030-4196-b66e-0fa5fb37053e:
+  76a38f07-f397-44dc-bb97-cbb31f22b166:
     id: node_type
     bundles:
       landing_page: landing_page
     negate: false
     context_mapping:
       node: node
-    uuid: f4f58cbb-7030-4196-b66e-0fa5fb37053e
+    uuid: 76a38f07-f397-44dc-bb97-cbb31f22b166
 selection_logic: and
 weight: -5
 relationships: {  }

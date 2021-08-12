@@ -8,8 +8,8 @@ _core:
   default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
 id: mapaka_local_actions
 theme: mapaka
-region: content
-weight: -2
+region: sidebar_r
+weight: -6
 provider: null
 plugin: local_actions_block
 settings:
