@@ -1,4 +1,4 @@
-uuid: d852d27f-ea49-495c-bc0f-1f229e22c778
+uuid: c91207db-c129-43d5-b460-8367098bf1d1
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ _core:
 id: mapaka_local_actions
 theme: mapaka
 region: content
-weight: -20
+weight: -2
 provider: null
 plugin: local_actions_block
 settings:

@@ -1,4 +1,4 @@
-uuid: a7b838b0-195b-407a-8eaf-1a8dc31a0014
+uuid: f82349e1-4bc5-42c4-88cc-fd9de8478c93
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ _core:
 id: mapaka_local_tasks
 theme: mapaka
 region: content
-weight: -40
+weight: -4
 provider: null
 plugin: local_tasks_block
 settings:

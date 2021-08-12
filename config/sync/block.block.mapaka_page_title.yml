@@ -1,7 +1,9 @@
-uuid: f45fcf3a-7f13-4b4f-ae98-a94b320a08e8
+uuid: bd4575e6-c4ae-496f-81c4-b5ad471f8127
 langcode: en
 status: true
 dependencies:
+  module:
+    - ctools
   theme:
     - mapaka
 _core:
@@ -9,7 +11,7 @@ _core:
 id: mapaka_page_title
 theme: mapaka
 region: content
-weight: -50
+weight: -8
 provider: null
 plugin: page_title_block
 settings:
@@ -17,4 +19,11 @@ settings:
   label: 'Page title'
   provider: core
   label_display: '0'
-visibility: {  }
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      noticia_: noticia_
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

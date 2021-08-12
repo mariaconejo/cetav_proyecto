@@ -1,6 +1,6 @@
-uuid: deb1e0af-7d74-4c7d-bc89-daa9af5d4ef1
+uuid: a60a0c51-9454-4bf1-887a-bd3bc008251f
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - system.menu.main

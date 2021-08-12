@@ -35,6 +35,37 @@ third_party_settings:
               context_mapping: {  }
             additional: {  }
             weight: 0
+          d2cfecc8-de71-4055-ad75-5a630dd0e432:
+            uuid: d2cfecc8-de71-4055-ad75-5a630dd0e432
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:taxonomy_term:tags:description'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
+          f594af66-921a-48a3-a828-a698ff6c925f:
+            uuid: f594af66-921a-48a3-a828-a698ff6c925f
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:taxonomy_term:tags:field_nombres'
+              formatter:
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+                type: string
+            additional: {  }
+            weight: 1
         third_party_settings: {  }
       -
         layout_id: layout_twocol_section

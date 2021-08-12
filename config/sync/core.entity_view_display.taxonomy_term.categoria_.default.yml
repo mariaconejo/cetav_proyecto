@@ -7,42 +7,21 @@ dependencies:
     - field.field.taxonomy_term.categoria_.field_destacada
     - field.field.taxonomy_term.categoria_.field_iconos
     - taxonomy.vocabulary.categoria_
-  module:
-    - options
-    - text
 id: taxonomy_term.categoria_.default
 targetEntityType: taxonomy_term
 bundle: categoria_
 mode: default
 content:
-  description:
-    label: hidden
-    type: text_default
-    weight: 0
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  field_descripcio:
-    weight: 3
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: basic_string
-    region: content
-  field_destacada:
-    weight: 6
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: list_default
-    region: content
   field_iconos:
     type: entity_reference_entity_view
-    weight: 2
+    weight: 0
     label: above
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
     region: content
-hidden: {  }
+hidden:
+  description: true
+  field_descripcio: true
+  field_destacada: true

@@ -1,4 +1,4 @@
-uuid: 1087c29f-0c28-4b82-8491-876b132e3efb
+uuid: 40c41b39-955d-4630-bfc3-c31779abcfd6
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ _core:
 id: mapaka_content
 theme: mapaka
 region: content
-weight: 0
+weight: -1
 provider: null
 plugin: system_main_block
 settings:

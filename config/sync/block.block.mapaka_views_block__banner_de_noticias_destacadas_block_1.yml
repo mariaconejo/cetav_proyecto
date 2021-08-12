@@ -1,22 +1,22 @@
-uuid: 8119c2fe-6450-4fca-8184-b732dc4a089a
+uuid: e6b8c403-b5c1-4482-8320-2934a993bbdd
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.ultimas_noticias_
+    - views.view.banner_de_noticias_destacadas
   module:
     - system
     - views
   theme:
     - mapaka
-id: mapaka_views_block__ultimas_noticias__block_1
+id: mapaka_views_block__banner_de_noticias_destacadas_block_1
 theme: mapaka
 region: content
-weight: -6
+weight: -7
 provider: null
-plugin: 'views_block:ultimas_noticias_-block_1'
+plugin: 'views_block:banner_de_noticias_destacadas-block_1'
 settings:
-  id: 'views_block:ultimas_noticias_-block_1'
+  id: 'views_block:banner_de_noticias_destacadas-block_1'
   label: ''
   provider: views
   label_display: visible
