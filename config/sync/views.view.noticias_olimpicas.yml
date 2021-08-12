@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_imagen
     - field.storage.node.field_resumen
+    - image.style.medium
     - node.type.noticia_
   module:
     - image
@@ -141,7 +142,7 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_style: ''
+            image_style: medium
             image_link: ''
           group_column: ''
           group_columns: {  }
