@@ -1,13 +1,12 @@
-uuid: 79c5ac0e-8fc7-487e-b3d7-02b22796e0f1
+uuid: e2600cbd-48ce-49ec-8361-ee79302c4372
 langcode: en
 status: true
 dependencies:
   module:
     - node
-    - search
     - user
-id: buscador_de_noticias
-label: 'buscador de noticias'
+id: bloque_de_busqueda
+label: 'bloque de busqueda'
 module: views
 description: ''
 tag: ''
@@ -52,50 +51,38 @@ display:
           offset: 0
       style:
         type: default
-      row:
-        type: search_view
         options:
-          score: true
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+      row:
+        type: fields
       fields:
         title:
           id: title
           table: node_field_data
           field: title
+          entity_type: node
+          entity_field: title
+          alter:
+            alter_text: false
+            make_link: false
+            absolute: false
+            trim: false
+            word_boundary: false
+            ellipsis: false
+            strip_tags: false
+            html: false
+          hide_empty: false
+          empty_zero: false
           settings:
             link_to_entity: true
           plugin_id: field
           relationship: none
           group_type: group
           admin_label: ''
-          label: ''
+          label: Title
           exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
           element_type: ''
           element_class: ''
           element_label_type: ''
@@ -105,8 +92,6 @@ display:
           element_wrapper_class: ''
           element_default_classes: true
           empty: ''
-          hide_empty: false
-          empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
           type: string
@@ -180,7 +165,7 @@ display:
           expose:
             label: ''
           granularity: second
-      title: 'buscador de noticias'
+      title: 'bloque de busqueda'
       header: {  }
       footer: {  }
       empty:
@@ -194,7 +179,7 @@ display:
           empty: true
           tokenize: false
           content:
-            value: 'No se encuentran resultados'
+            value: 'No se encontraron resultados'
             format: basic_html
           plugin_id: text
       relationships: {  }
@@ -220,6 +205,9 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
+      block_description: 'Busqueda de noticias'
+      allow:
+        items_per_page: true
     cache_metadata:
       max-age: -1
       contexts:

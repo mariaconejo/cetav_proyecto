@@ -6,7 +6,7 @@ dependencies:
     - field.field.paragraph.image_slider.field_image
     - paragraphs.paragraphs_type.image_slider
   module:
-    - image
+    - slick
 id: paragraph.image_slider.default
 targetEntityType: paragraph
 bundle: image_slider
@@ -17,8 +17,45 @@ content:
     label: above
     settings:
       image_style: ''
-      image_link: ''
+      optionset_thumbnail: ''
+      skin_thumbnail: ''
+      thumbnail_caption: ''
+      thumbnail_effect: ''
+      thumbnail_position: ''
+      optionset: default
+      override: false
+      overridables: {  }
+      skin: ''
+      skin_arrows: ''
+      skin_dots: ''
+      use_theme_field: false
+      cache: 0
+      current_view_mode: ''
+      fx: ''
+      style: ''
+      icon: ''
+      layout: ''
+      view_mode: ''
+      background: false
+      box_caption: ''
+      box_caption_custom: ''
+      box_media_style: ''
+      caption: {  }
+      responsive_image_style: ''
+      box_style: ''
+      media_switch: ''
+      ratio: ''
+      thumbnail_style: ''
+      _uri: ''
+      breakpoints: {  }
+      sizes: ''
+      grid_header: ''
+      preserve_keys: false
+      visible_items: 0
+      grid: 0
+      grid_medium: 0
+      grid_small: 0
     third_party_settings: {  }
-    type: image
+    type: slick_image
     region: content
 hidden: {  }

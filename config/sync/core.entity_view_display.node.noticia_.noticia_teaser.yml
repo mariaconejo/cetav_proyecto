@@ -11,7 +11,6 @@ dependencies:
     - field.field.node.noticia_.field_image_teaser
     - field.field.node.noticia_.field_imagen_
     - field.field.node.noticia_.field_resumen
-    - field.field.node.noticia_.field_tabs
     - field.field.node.noticia_.field_titulo_teaser
     - node.type.noticia_
   module:
@@ -67,5 +66,4 @@ hidden:
   field_contenido: true
   field_destacada: true
   field_image_teaser: true
-  field_tabs: true
   links: true

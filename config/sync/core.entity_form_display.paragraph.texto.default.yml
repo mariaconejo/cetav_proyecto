@@ -6,6 +6,8 @@ dependencies:
     - field.field.paragraph.texto.field_cita
     - field.field.paragraph.texto.field_texto
     - paragraphs.paragraphs_type.texto
+  module:
+    - text
 id: paragraph.texto.default
 targetEntityType: paragraph
 bundle: texto
@@ -18,12 +20,12 @@ content:
     type: options_buttons
     region: content
   field_texto:
-    weight: 0
+    weight: 2
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-    type: string_textarea
+    type: text_textarea
     region: content
 hidden:
   created: true

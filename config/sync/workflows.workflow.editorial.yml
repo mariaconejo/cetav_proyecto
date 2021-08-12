@@ -2,6 +2,8 @@ uuid: 76e5a00a-4aea-492c-82b6-c4fc77808328
 langcode: en
 status: true
 dependencies:
+  config:
+    - node.type.noticia_
   module:
     - content_moderation
 _core:
@@ -59,5 +61,7 @@ type_settings:
       from:
         - draft
         - published
-  entity_types: {  }
+  entity_types:
+    node:
+      - noticia_
   default_moderation_state: draft

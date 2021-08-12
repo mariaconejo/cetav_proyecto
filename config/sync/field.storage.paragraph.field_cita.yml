@@ -12,11 +12,8 @@ type: list_string
 settings:
   allowed_values:
     -
-      value: '" "'
+      value: 'yes'
       label: Cita
-    -
-      value: ...
-      label: 'Texto normal'
   allowed_values_function: ''
 module: options
 locked: false

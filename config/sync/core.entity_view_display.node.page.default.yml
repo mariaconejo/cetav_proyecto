@@ -3,80 +3,14 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.page.field_descripcion
-    - field.field.node.page.field_logo
-    - field.field.node.page.layout_builder__layout
+    - field.field.node.page.body
+    - field.field.node.page.field_meta_tags
+    - field.field.node.page.field_yoast_seo
     - node.type.page
-    - views.view.busqueda_noticias
   module:
-    - image
-    - layout_builder
-    - layout_discovery
+    - metatag
     - text
     - user
-    - views
-third_party_settings:
-  layout_builder:
-    allow_custom: true
-    enabled: true
-    sections:
-      -
-        layout_id: layout_twocol_section
-        layout_settings:
-          label: search
-          column_widths: 50-50
-        components:
-          6d220493-c018-4d77-ab89-0fd6ee93d87b:
-            uuid: 6d220493-c018-4d77-ab89-0fd6ee93d87b
-            region: second
-            configuration:
-              id: 'views_exposed_filter_block:busqueda_noticias-page_1'
-              label: ''
-              provider: views
-              label_display: visible
-              views_label: ''
-              context_mapping: {  }
-            additional: {  }
-            weight: 0
-        third_party_settings: {  }
-      -
-        layout_id: layout_onecol
-        layout_settings:
-          label: ''
-        components:
-          571fb5d6-4e05-4149-b585-6e0d22e85b58:
-            uuid: 571fb5d6-4e05-4149-b585-6e0d22e85b58
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:page:field_logo'
-              formatter:
-                label: above
-                settings:
-                  image_style: ''
-                  image_link: ''
-                third_party_settings: {  }
-                type: image
-            additional: {  }
-            weight: 0
-          638131ed-9aa7-4922-a5c4-c451f935bcfd:
-            uuid: 638131ed-9aa7-4922-a5c4-c451f935bcfd
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:page:field_descripcion'
-              formatter:
-                label: above
-                settings: {  }
-                third_party_settings: {  }
-                type: text_default
-            additional: {  }
-            weight: 3
-        third_party_settings: {  }
 _core:
   default_config_hash: g1S3_GLaxq4l3I9RIca5Mlz02MxI2KmOquZpHw59akM
 id: node.page.default
@@ -84,22 +18,29 @@ targetEntityType: node
 bundle: page
 mode: default
 content:
-  field_descripcion:
-    weight: 1
+  body:
+    label: hidden
+    type: text_default
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_meta_tags:
+    weight: 102
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    type: metatag_empty_formatter
     region: content
-  field_logo:
-    weight: 0
+  field_yoast_seo:
+    weight: 103
     label: above
     settings:
-      image_style: ''
-      image_link: ''
+      link_to_entity: false
     third_party_settings: {  }
-    type: image
+    type: string
     region: content
-hidden:
-  layout_builder__layout: true
-  links: true
+  links:
+    weight: 101
+    region: content
+hidden: {  }

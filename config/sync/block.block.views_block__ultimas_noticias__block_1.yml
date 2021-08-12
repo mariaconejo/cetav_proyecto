@@ -12,7 +12,7 @@ dependencies:
 id: views_block__ultimas_noticias__block_1
 theme: bartik
 region: content
-weight: -3
+weight: -5
 provider: null
 plugin: 'views_block:ultimas_noticias_-block_1'
 settings:

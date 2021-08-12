@@ -1,10 +1,12 @@
-uuid: d81dd5f6-24ab-49a3-b7e0-4e0904a759fb
+uuid: c0bc53ee-b281-48f1-9fb5-0558de84c403
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_texto
     - paragraphs.paragraphs_type.texto
+  module:
+    - text
 id: paragraph.texto.field_texto
 field_name: field_texto
 entity_type: paragraph
@@ -16,4 +18,4 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: string_long
+field_type: text_long

@@ -8,6 +8,7 @@ dependencies:
     - paragraphs.paragraphs_type.texto
   module:
     - options
+    - text
 id: paragraph.texto.default
 targetEntityType: paragraph
 bundle: texto
@@ -21,10 +22,10 @@ content:
     type: list_default
     region: content
   field_texto:
-    weight: 0
+    weight: 2
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: basic_string
+    type: text_default
     region: content
 hidden: {  }
