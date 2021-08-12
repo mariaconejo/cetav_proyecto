@@ -1,6 +1,6 @@
 uuid: deb1e0af-7d74-4c7d-bc89-daa9af5d4ef1
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.main
@@ -12,7 +12,7 @@ _core:
   default_config_hash: ChCx7DYNUrPTt5uiRdQAPDKJQMc-_SyAQTrZh8H0o-c
 id: mapaka_main_menu
 theme: mapaka
-region: primary_menu
+region: header
 weight: 0
 provider: null
 plugin: 'system_menu_block:main'

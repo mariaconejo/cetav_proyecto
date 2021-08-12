@@ -1,6 +1,6 @@
 uuid: 43ca94e3-74ca-457e-b366-fa2530010496
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.footer
@@ -12,7 +12,7 @@ _core:
   default_config_hash: 8zRjTNbfNAJ94lQpZDu6MkyD87GYJ2zpH9VQPVmRbcM
 id: mapaka_footer
 theme: mapaka
-region: sidebar_first
+region: header
 weight: 0
 provider: null
 plugin: 'system_menu_block:footer'

@@ -1,6 +1,6 @@
 uuid: 33424416-f06b-4fa3-8484-b3d909290b50
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -10,7 +10,7 @@ _core:
   default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
 id: mapaka_breadcrumbs
 theme: mapaka
-region: breadcrumb
+region: header
 weight: 0
 provider: null
 plugin: system_breadcrumb_block
