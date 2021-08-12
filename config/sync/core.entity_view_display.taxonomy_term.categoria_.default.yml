@@ -6,7 +6,6 @@ dependencies:
     - field.field.taxonomy_term.categoria_.field_descripcio
     - field.field.taxonomy_term.categoria_.field_destacada
     - field.field.taxonomy_term.categoria_.field_iconos
-    - field.field.taxonomy_term.categoria_.field_nombre
     - taxonomy.vocabulary.categoria_
   module:
     - options
@@ -45,13 +44,5 @@ content:
       view_mode: default
       link: false
     third_party_settings: {  }
-    region: content
-  field_nombre:
-    weight: 5
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
     region: content
 hidden: {  }
