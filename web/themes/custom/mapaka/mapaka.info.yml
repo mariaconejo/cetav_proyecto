@@ -3,11 +3,10 @@ type: theme
 description: 'Tema de Mapaka'
 core_version_requirement: ^8 || ^9
 libraries:
-  - mapaka/practica_css
-  - mapaka/practica_js
-region:
+  - mapaka/mapaka_css
+  - mapaka/mapaka_js
+regions:
   header: Header
   content: Content
   sidebar_r: 'Sidebar Right'
   footer: Footer
-

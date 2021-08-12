@@ -6,6 +6,6 @@ mapaka_css:
 mapaka_js:
   js:
     js/scripts.js: {}
+
   dependecies:
     - core/jquery
-
